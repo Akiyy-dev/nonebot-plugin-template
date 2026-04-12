@@ -78,32 +78,14 @@ _✨ NoneBot 插件简单描述 ✨_
 
 <details>
 <summary>使用包管理器安装</summary>
-在 nonebot2 项目的插件目录下, 打开命令行, 根据你使用的包管理器, 输入相应的安装命令
-
-<details>
-<summary>pip</summary>
+在 nonebot2 项目的插件目录下, 打开命令行, 进入虚拟环境, 输入相应的安装命令
 
     pip install nonebot-plugin-template
-</details>
-<details>
-<summary>pdm</summary>
 
-    pdm add nonebot-plugin-template
-</details>
-<details>
-<summary>poetry</summary>
 
-    poetry add nonebot-plugin-template
-</details>
-<details>
-<summary>conda</summary>
+打开 nonebot2 项目根目录下的 `pyproject.toml` 文件, 在 `[tool.nonebot.plugins]` 部分追加写入
 
-    conda install nonebot-plugin-template
-</details>
-
-打开 nonebot2 项目根目录下的 `pyproject.toml` 文件, 在 `[tool.nonebot]` 部分追加写入
-
-    plugins = ["nonebot_plugin_template"]
+    nonebot-plugin-template = ["nonebot-plugin-template"]
 
 </details>
 
